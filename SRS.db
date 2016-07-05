@@ -1,0 +1,55 @@
+-- --------------------------------------------------------
+-- 主机:                           127.0.0.1
+-- 服务器版本:                        10.0.17-MariaDB - mariadb.org binary distribution
+-- 服务器操作系统:                      Win32
+-- HeidiSQL 版本:                  9.1.0.4867
+-- --------------------------------------------------------
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET NAMES utf8mb4 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+
+-- 导出  表 srs.course 结构
+CREATE TABLE IF NOT EXISTS `course` (
+  `CourseNo` varchar(50) DEFAULT NULL,
+  `CourseName` varchar(50) DEFAULT NULL,
+  `Credits` varchar(50) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- 正在导出表  srs.course 的数据：~0 rows (大约)
+/*!40000 ALTER TABLE `course` DISABLE KEYS */;
+/*!40000 ALTER TABLE `course` ENABLE KEYS */;
+
+
+-- 导出  表 srs.section 结构
+CREATE TABLE IF NOT EXISTS `section` (
+  `SectionNo` varchar(50) DEFAULT NULL,
+  `dayOfWeek` varchar(50) DEFAULT NULL,
+  `timeOfDay` varchar(50) DEFAULT NULL,
+  `semester` varchar(50) DEFAULT NULL,
+  `room` varchar(50) DEFAULT NULL,
+  `seatingCapacity` varchar(50) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- 正在导出表  srs.section 的数据：~0 rows (大约)
+/*!40000 ALTER TABLE `section` DISABLE KEYS */;
+/*!40000 ALTER TABLE `section` ENABLE KEYS */;
+
+
+-- 导出  表 srs.students 结构
+CREATE TABLE IF NOT EXISTS `students` (
+  `Number` varchar(50) DEFAULT NULL,
+  `Name` varchar(50) DEFAULT NULL,
+  `department` varchar(50) DEFAULT NULL,
+  `major` varchar(50) DEFAULT NULL,
+  `degree` varchar(50) DEFAULT NULL,
+  `class` varchar(50) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- 正在导出表  srs.students 的数据：~0 rows (大约)
+/*!40000 ALTER TABLE `students` DISABLE KEYS */;
+/*!40000 ALTER TABLE `students` ENABLE KEYS */;
+/*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
+/*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

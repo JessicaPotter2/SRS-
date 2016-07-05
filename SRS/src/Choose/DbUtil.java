@@ -1,4 +1,4 @@
-package guitar1;
+package Choose;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
@@ -7,7 +7,7 @@ import java.sql.SQLException;
 public class DbUtil {
 	//纭紪鐮�??
 	//static String url="jdbc:sqlserver://localhost:1433; DatabaseName=test";
-	static String url="jdbc:mariadb://localhost:3306/guitar";
+	static String url="jdbc:mariadb://localhost:3306/SRS";
 	static String userName="root";
 	static String password="123";
 	static Connection conn=null;
